@@ -68,3 +68,20 @@ function singles( array ) {
     };
     return single;
 };
+
+// Challenge #4
+
+var challengeFourInputA = [ 1, 2, 3 ];
+
+//count the elements in array
+var arraycount = challengeFourInputA.length;
+
+//for each number in array
+for (i = 0; i <arraycount; i++) { 
+	//double values
+	challengeFourInputA[i] = challengeFourInputA[i]*2;
+}
+
+challengeFourInputA.toString();
+
+document.getElementById("challenge-4").innerHTML = challengeFourInputA;
