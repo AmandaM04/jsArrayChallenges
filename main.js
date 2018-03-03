@@ -57,7 +57,14 @@ document.getElementById("challenge-2").innerHTML = arrayofNumbers;
 // Challenge #3
 
 //create an array with 3+ numbers all the same except for 1 unique#
-
-//loop through the numbers to find the number that is different
+var challengeThreeInputA = [ 0, 0, 0, 0, 0, 0, 0, 0.55, 0, 0 ];
 
 //Display the unique number
+document.getElementById("challenge-3").innerHTML = singles(challengeThreeInputA); 
+//function returns single values
+function singles( array ) {
+    for( var index = 0, single = []; index < array.length; index++ ) {
+        if( array.indexOf( array[index], array.indexOf( array[index] ) + 1 ) == -1 ) single.push( array[index] );    
+    };
+    return single;
+};
