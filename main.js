@@ -85,3 +85,26 @@ for (i = 0; i <arraycount; i++) {
 challengeFourInputA.toString();
 
 document.getElementById("challenge-4").innerHTML = challengeFourInputA;
+
+// Challenge #5
+
+var array1 = [1,2, 4, 7, 5, 9];
+var array2 = [5, 9, 2];
+
+//loop through array2
+var arraycount = array2.length;
+
+for (i=0; i<arraycount; i++) {
+//if value in array1 remove from array1
+index = array1.indexOf(array2[i]);
+if (index > -1){
+		array1.splice(index, 1);
+	}
+}
+
+//display array1
+array1.toString();
+
+document.getElementById("challenge-5").innerHTML = array1;
+
+
