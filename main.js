@@ -107,4 +107,17 @@ array1.toString();
 
 document.getElementById("challenge-5").innerHTML = array1;
 
+// Challenge #6
 
+var test3 = [13,11,10,3,2,1,4,5,6,9,7,8]; // 12
+
+//count array and add 1
+var numbers = test3.length+1;
+//loop through numbers
+for (i=1; i<numbers; i++) {
+//if missing display value
+index = test3.indexOf(i);
+if (index == -1){
+	document.getElementById("challenge-6").innerHTML = i;
+	}
+}
